@@ -36,7 +36,7 @@ $(function() {
       var email = $("input#email-entry").val();
       person.name = name;
       person.email = email;
-      console.log(person);
+      $("#name-display").text(person.name);
     });
 
     // size button
@@ -45,14 +45,21 @@ $(function() {
       $("#toppings-screen").show();
       var size = $("#size").val();
       pizza.size = size;
-      console.log(pizza);
+      $("#size-display").text(pizza.size);
     });
 
     // toppings button
     $("#toppings-button").click(function() {
       $("#toppings-screen").hide();
       $("#confirmation-screen").show();
+      var toppings = [];
+      $("input:checkbox:checked").each(function(i){
+        toppings[i] = $(this).val();
+      });
+      pizza.toppings = toppings;
+      $("#toppings-display").text(pizza.toppings);
     });
+
 
 
     $("form#pizza-form").submit(function(event) {
@@ -61,14 +68,3 @@ $(function() {
 
   });
 });
-
-
-// var toppings = [];
-// $("input:checkbox:checked").each(function(i){
-//   toppings[i] = $(this).val();
-// });
-//
-
-// console.log(size);
-// console.log(toppings);
-// });
