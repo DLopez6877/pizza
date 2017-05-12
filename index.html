@@ -30,7 +30,10 @@
                 <label for="email-entry">Email:</label>
                 <input type="email" class="form-control" id="email-entry" placeholder="Email" required>
               </div>
-              
+              <div class="form-group">
+                <label for="address-entry">Delivery Address:</label>
+                <input type="address" class="form-control"  id="address-entry" placeholder="1001 Main Street" required>
+              </div>
               <button type="button" id="information-button" class="next-button">Next</button>
             </div> <!--/order screen -->
             <div id="size-screen" class="initially-hidden">
@@ -87,6 +90,8 @@
               </ul>
               <h3>Your pizza will cost:</h3>
               <p>$<span id="cost-display"></span>.00</p>
+              <h3>Delivering to:</h3>
+              <p><span id="address-display"></span></p>
               <button type="submit" class="next-button">Order Pizza</button>
             </div>
           </form>

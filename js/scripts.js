@@ -6,9 +6,10 @@ function Pizza(size, toppings) {
   this.toppings = toppings;
 }
 
-function Person(name, email){
+function Person(name, email, address){
   this.name = name;
   this.email = email;
+  this.address = address;
 }
 
 Pizza.prototype.calculatePrice = function(size) {
@@ -48,9 +49,12 @@ $(function() {
       $("#size-screen").show();
       var name = $("input#name-entry").val();
       var email = $("input#email-entry").val();
+      var address = $("input#address-entry").val();
       person.name = name;
       person.email = email;
+      person.address = address;
       $("#name-display").text(person.name);
+      $("#address-display").text(person.address);
     });
 
     // size button
