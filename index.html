@@ -13,48 +13,62 @@
       <h1 class="jumbotron">Gotham City Pizza</h1>
     </header>
     <div class="container">
-      <form id="pizza-form">
-        <div id="order-screen">
-          <div class="form-group">
-            <label for="name-entry">Name:</label>
-            <input type="text" class="form-control"  id="name-entry" placeholder="Bruce Wayne" required>
-          </div>
-          <div class="form-group">
-             <label for="email-entry">Email:</label>
-             <input type="email" class="form-control" id="email-entry" placeholder="Email" required>
-           </div>
-          <h5 class="next-button">Next</h5>
-        </div> <!--/order screen -->
-        <div id="size-screen">
-          <select class="form-control" id="size">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
-          <h5 class="next-button">Next</h5>
-        </div> <!-- /size screen -->
-        <div id="toppings">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="pepperoni">
-              Pepperoni
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="bacon">
-              Bacon
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="sausage">
-              Sausage
-            </label>
-          </div>
-          <button type="submit" class="btn btn-default">Order Pizza</button>
-        </div><!--end of toppings -->
-      </form>
+      <div class="row">
+        <div class="col-xs-6">
+          <form id="pizza-form">
+            <div id="order-screen">
+              <h1>Order a pizza</h1>
+            <button type="button" id="order-button" class="next-button">Order</button>
+            </div>
+            <div id="information-screen">
+              <div class="form-group">
+                <label for="name-entry">Name:</label>
+                <input type="text" class="form-control"  id="name-entry" placeholder="Bruce Wayne" required>
+              </div>
+              <div class="form-group">
+                <label for="email-entry">Email:</label>
+                <input type="email" class="form-control" id="email-entry" placeholder="Email" required>
+              </div>
+              <button type="button" id="information-button" class="next-button">Next</button>
+            </div> <!--/order screen -->
+            <div id="size-screen">
+              <select class="form-control" id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+              <button type="button" id="size-button" class="next-button">Next</button>
+            </div> <!-- /size screen -->
+            <div id="toppings">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="pepperoni">
+                  Pepperoni
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="bacon">
+                  Bacon
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="sausage">
+                  Sausage
+                </label>
+              </div>
+              <button type="submit" class="btn btn-default">Order Pizza</button>
+            </div><!--end of toppings -->
+          </form>
+        </div><!-- /col -->
+        <div class="col-xs-6">
+          <h3>About Gotham Pizza</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>image will go here</p>
+        </div>
+
+      </div><!-- /row -->
 
     </div>
   </body>
