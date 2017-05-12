@@ -18,11 +18,13 @@
 html {
   height: 100%;
 }
+
 body {
   background-image: url(../img/gotham.jpg);
   background-size: cover;
   background-position: bottom;
   height: 100%;
+  background-repeat: no-repeat;
 }
 
 .well {
@@ -54,7 +56,44 @@ body {
   color: grey;
   font-style: italic;
 }
-/*pizza*/
+#order-screen {
+  text-align: center;
+}
+
+/*//////////////////pizza screen/////////////*/
+/*topping images*/
+#pizza-screen {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#pizza-pic {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#bacon-pic {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+#sausage-pic {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+#pep-pic {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+.topping-pic {
+  width: 50%;
+  padding-left: 15%;
+  padding-top: 10%;
+}
+
+/*pizza size*/
 .pizza-pic-small {
   width: 60%;
   margin-left: 20%;

@@ -24,15 +24,15 @@
               <h1>Enter your information:</h1>
               <div class="form-group">
                 <label for="name-entry">Name:</label>
-                <input type="text" class="form-control"  id="name-entry" placeholder="Bruce Wayne" required>
+                <input type="text" class="form-control" id="name-entry" placeholder="Bruce Wayne" >
               </div>
               <div class="form-group">
                 <label for="email-entry">Email:</label>
-                <input type="email" class="form-control" id="email-entry" placeholder="Email" required>
+                <input type="email" class="form-control" id="email-entry" placeholder="Email" >
               </div>
               <div class="form-group">
                 <label for="address-entry">Delivery Address:</label>
-                <input type="address" class="form-control"  id="address-entry" placeholder="1001 Main Street" required>
+                <input type="text" class="form-control"  id="address-entry" placeholder="1001 Main Street" >
               </div>
               <button type="button" id="information-button" class="next-button">Next</button>
             </div> <!--/order screen -->
@@ -63,19 +63,19 @@
               <h4><span class="pricing">(Toppings are $1.00 each)</span></h4>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="Pepperoni">
+                  <input id="pep-box" type="checkbox" value="Pepperoni">
                   Pepperoni
                 </label>
               </div>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="Bacon">
+                  <input id="bacon-box" type="checkbox" value="Bacon">
                   Bacon
                 </label>
               </div>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="Sausage">
+                  <input id="sausage-box" type="checkbox" value="Sausage">
                   Sausage
                 </label>
               </div>
@@ -103,6 +103,9 @@
           </div>
           <div class="initially-hidden" id="pizza-screen">
             <img id="pizza-pic" class="pizza-pic-small" src="img/pizza.png" alt="cheese pizza">
+            <img id="pep-pic" class="topping-pic initially-hidden" src="img/pep.png" alt="pepperoni">
+            <img id="bacon-pic" class="topping-pic initially-hidden" src="img/bacon.png" alt="bacon">
+            <img id="sausage-pic" class="topping-pic initially-hidden" src="img/sausage.png" alt="sausage">
           </div>
         </div>
       </div><!-- /row -->

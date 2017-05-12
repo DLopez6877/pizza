@@ -82,6 +82,15 @@ $(function() {
 
       var cost = pizza.calculatePrice(pizza.size);
       $("#cost-display").text(cost);
+
+      // $("#pep-box").change(function(){
+      //     if($(this).is(":checked")){
+      //         $("#pep-pic").show();
+      //     } else {
+      //         $("#pep-pic").hide();
+      //     }
+      // });
+
     });
 
     $("form#pizza-form").submit(function(event) {
