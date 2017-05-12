@@ -20,7 +20,7 @@
               <h1>Order a pizza</h1>
             <button type="button" id="order-button" class="next-button">Order</button>
             </div>
-            <div id="information-screen">
+            <div id="information-screen" class="initially-hidden">
               <div class="form-group">
                 <label for="name-entry">Name:</label>
                 <input type="text" class="form-control"  id="name-entry" placeholder="Bruce Wayne" required>
@@ -31,7 +31,7 @@
               </div>
               <button type="button" id="information-button" class="next-button">Next</button>
             </div> <!--/order screen -->
-            <div id="size-screen">
+            <div id="size-screen" class="initially-hidden">
               <select class="form-control" id="size">
                 <option>Small</option>
                 <option>Medium</option>
@@ -39,7 +39,7 @@
               </select>
               <button type="button" id="size-button" class="next-button">Next</button>
             </div> <!-- /size screen -->
-            <div id="toppings">
+            <div id="toppings-screen" class="initially-hidden">
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="pepperoni">
@@ -65,7 +65,7 @@
         <div class="col-xs-6">
           <h3>About Gotham Pizza</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>image will go here</p>
+          <img id="pizza-pic" class="initially-hidden" src="img/pizza.png" alt="cheese pizza">
         </div>
 
       </div><!-- /row -->
