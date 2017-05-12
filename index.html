@@ -33,11 +33,24 @@
             </div> <!--/order screen -->
             <div id="size-screen" class="initially-hidden">
               <h2>Which size pizza would you like?</h2>
-              <select class="form-control" id="size">
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
-              </select>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="small-radio" value="Small">
+                  Small
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="medium-radio" value="Medium">
+                  Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="large-radio" value="Large">
+                  Large
+                </label>
+              </div>
               <button type="button" id="size-button" class="next-button">Next</button>
             </div> <!-- /size screen -->
             <div id="toppings-screen" class="initially-hidden">

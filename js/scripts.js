@@ -57,7 +57,7 @@ $(function() {
     $("#size-button").click(function() {
       $("#size-screen").hide();
       $("#toppings-screen").show();
-      var size = $("#size").val();
+      var size = $("input:radio:checked").val();
       pizza.size = size;
       $("#size-display").text(pizza.size);
     });
