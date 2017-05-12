@@ -36,25 +36,26 @@
               <div class="radio">
                 <label>
                   <input type="radio" name="optionsRadios" id="small-radio" value="Small">
-                  Small
+                  Small <span class="pricing">($8.00)</span>
                 </label>
               </div>
               <div class="radio">
                 <label>
                   <input type="radio" name="optionsRadios" id="medium-radio" value="Medium">
-                  Medium
+                  Medium <span class="pricing">($10.00)</span>
                 </label>
               </div>
               <div class="radio">
                 <label>
                   <input type="radio" name="optionsRadios" id="large-radio" value="Large">
-                  Large
+                  Large <span class="pricing">($12.00)</span>
                 </label>
               </div>
               <button type="button" id="size-button" class="next-button">Next</button>
             </div> <!-- /size screen -->
             <div id="toppings-screen" class="initially-hidden">
               <h2>Which toppings would you like?</h2>
+              <h4><span class="pricing">(Toppings are $1.00 each)</span></h4>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="Pepperoni">
@@ -83,7 +84,7 @@
 
               </ul>
               <h3>Your pizza will cost:</h3>
-              <p>$<span id="cost-display"></span></p>
+              <p>$<span id="cost-display"></span>.00</p>
               <button type="submit" class="next-button">Order Pizza</button>
             </div>
           </form>
