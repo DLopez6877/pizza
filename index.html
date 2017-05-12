@@ -32,7 +32,7 @@
               <button type="button" id="information-button" class="next-button">Next</button>
             </div> <!--/order screen -->
             <div id="size-screen" class="initially-hidden">
-              <h1>Which size pizza would you like?</h1>
+              <h2>Which size pizza would you like?</h2>
               <select class="form-control" id="size">
                 <option>Small</option>
                 <option>Medium</option>
@@ -41,6 +41,7 @@
               <button type="button" id="size-button" class="next-button">Next</button>
             </div> <!-- /size screen -->
             <div id="toppings-screen" class="initially-hidden">
+              <h2>Which toppings would you like?</h2>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="pepperoni">
@@ -59,8 +60,15 @@
                   Sausage
                 </label>
               </div>
-              <button type="submit" class="next-button">Order Pizza</button>
+              <button type="button" id="toppings-button" class="next-button">Next</button>
             </div><!--end of toppings -->
+            <div id="confirmation-screen" class="initially-hidden">
+              <h1><span id="name-display"></span>'s' Order:</h1>
+              <p><span id="size-display"></span> pizza with <span id="toppings-display"></span>!</p>
+              <h3>Your pizza will cost:</h3>
+              <p><span id="cost-display"></span></p>
+              <button type="submit" class="next-button">Order Pizza</button>
+            </div>
           </form>
         </div><!-- /col -->
         <div class="col-xs-6">

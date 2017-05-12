@@ -33,6 +33,12 @@ $(function() {
     $("#toppings-screen").show();
   });
 
+  // toppings button
+  $("#toppings-button").click(function() {
+    $("#toppings-screen").hide();
+    $("#confirmation-screen").show();
+  });
+
 
   $("form#pizza-form").submit(function(event) {
     event.preventDefault();
