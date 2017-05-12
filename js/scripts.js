@@ -57,7 +57,9 @@ $(function() {
         toppings[i] = $(this).val();
       });
       pizza.toppings = toppings;
-      $("#toppings-display").text(pizza.toppings);
+      pizza.toppings.forEach(function(topping) {
+        $("#toppings-display").append("<li>" + topping + "</li>");
+      });
     });
 
 
