@@ -84,12 +84,25 @@ $(function() {
       $("#cost-display").text(cost);
     });
 
-
-
     $("form#pizza-form").submit(function(event) {
       event.preventDefault();
       $(".row").hide();
       $("#purchase-screen").show();
+    });
+
+    $("input#small-radio").click(function () {
+        $('#pizza-pic').removeClass("pizza-pic-medium");
+        $('#pizza-pic').removeClass("pizza-pic-large");
+        // $('#pizza-pic').addClass("pizza-pic-small");
+    });
+
+    $("input#medium-radio").click(function () {
+        $('#pizza-pic').removeClass("pizza-pic-large");
+        $('#pizza-pic').addClass("pizza-pic-medium");
+    });
+
+    $("input#large-radio").click(function () {
+        $('#pizza-pic').addClass("pizza-pic-large");
     });
 
   });

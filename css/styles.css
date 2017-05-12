@@ -34,11 +34,32 @@
   font-size: 110px;
 }
 
-/*screens*/
+/*//////////////////////screens//////////////////////////////////////*/
+/*pricing*/
 .pricing {
   font-size: 70%;
   color: grey;
   font-style: italic;
+}
+/*pizza*/
+.pizza-pic-small {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.pizza-pic-medium {
+  width: 65%;
+  margin-left: 17.5%;
+}
+
+.pizza-pic-large {
+  width: 70%;
+  margin-left: 15%;
+}
+
+
+#purchase-screen {
+  text-align: center;
 }
 
 h1 {
