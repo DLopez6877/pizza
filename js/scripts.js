@@ -53,7 +53,8 @@ $(function() {
       person.name = name;
       person.email = email;
       person.address = address;
-      $("#name-display").text(person.name);
+      $(".name-display").text(person.name);
+      $("#email-display").text(person.email);
       $("#address-display").text(person.address);
     });
 
@@ -87,7 +88,8 @@ $(function() {
 
     $("form#pizza-form").submit(function(event) {
       event.preventDefault();
-      alert("Your pizza is on its way!");
+      $(".row").hide();
+      $("#purchase-screen").show();
     });
 
   });

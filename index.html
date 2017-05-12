@@ -82,7 +82,7 @@
               <button type="button" id="toppings-button" class="next-button">Next</button>
             </div><!--end of toppings -->
             <div id="confirmation-screen" class="initially-hidden">
-              <h1><span id="name-display"></span>'s Order:</h1>
+              <h1><span class="name-display"></span>'s Order:</h1>
               <p><span id="size-display"></span> pizza</p>
               <h3>Toppings:</h3>
               <ul id="toppings-display">
@@ -105,8 +105,12 @@
             <img id="pizza-pic" src="img/pizza.png" alt="cheese pizza">
           </div>
         </div>
-
       </div><!-- /row -->
+      <div id="purchase-screen" class="initially-hidden">
+          <h1 id="purchase-header"><span class="name-display"></span>, your pizza is ordered!</h1>
+          <h2>Estimated time: 60 mins</h2>
+          <h3>Receipt emailed to: <span id="email-display"></span></h3>
+      </div>
 
     </div>
   </body>
