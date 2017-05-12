@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'lights';
+	src: url('../fonts/Showtime.ttf');
+}
+
 .initially-hidden {
   display: none;
 }
@@ -9,7 +14,7 @@
 }
 
 .jumbotron {
-  margin: 0 0 -1.75%;
+  margin: 0 0 -1.84%;
   text-align: center;
   padding: 0;
 }
