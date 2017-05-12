@@ -10,7 +10,7 @@
   <body>
     <header>
       <img id="header-logo" src="img/logo.png" alt="Gotham City Pizza logo">
-      <h1 class="jumbotron">Gotham City Pizza</h1>
+      <h1 id="header-title">Gotham City Pizza</h1>
     </header>
     <div class="container">
       <div class="row">
@@ -21,6 +21,7 @@
             <button type="button" id="order-button" class="next-button">Order</button>
             </div>
             <div id="information-screen" class="initially-hidden">
+              <h1>Enter your information:</h1>
               <div class="form-group">
                 <label for="name-entry">Name:</label>
                 <input type="text" class="form-control"  id="name-entry" placeholder="Bruce Wayne" required>
@@ -29,6 +30,7 @@
                 <label for="email-entry">Email:</label>
                 <input type="email" class="form-control" id="email-entry" placeholder="Email" required>
               </div>
+              
               <button type="button" id="information-button" class="next-button">Next</button>
             </div> <!--/order screen -->
             <div id="size-screen" class="initially-hidden">
@@ -77,7 +79,7 @@
               <button type="button" id="toppings-button" class="next-button">Next</button>
             </div><!--end of toppings -->
             <div id="confirmation-screen" class="initially-hidden">
-              <h1><span id="name-display"></span>'s' Order:</h1>
+              <h1><span id="name-display"></span>'s Order:</h1>
               <p><span id="size-display"></span> pizza</p>
               <h3>Toppings:</h3>
               <ul id="toppings-display">

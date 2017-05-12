@@ -1,22 +1,37 @@
+/*fonts*/
 @font-face {
-	font-family: 'lights';
+	font-family: 'Showtime';
 	src: url('../fonts/Showtime.ttf');
 }
 
+@font-face {
+	font-family: 'Eastside';
+	src: url('../fonts/UpperEastSide.ttf');
+}
+
+@font-face {
+	font-family: 'Vonique';
+	src: url('../fonts/Vonique 92 Regular.otf');
+}
+
+/*general*/
 .initially-hidden {
   display: none;
 }
 
 /*header*/
 #header-logo {
-  max-width: 100%;
-  margin-bottom: -15%;
+  max-width: 80%;
+  margin-bottom: -14%;
+  margin-left: 10%;
 }
 
-.jumbotron {
-  margin: 0 0 8%;
+#header-title {
+  margin: 0 0 2%;
   text-align: center;
   padding: 0;
+  font-family: Eastside;
+  font-size: 110px;
 }
 
 /*screens*/
@@ -24,4 +39,8 @@
   font-size: 70%;
   color: grey;
   font-style: italic;
+}
+
+h1 {
+  font-family: Vonique;
 }
