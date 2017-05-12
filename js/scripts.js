@@ -12,15 +12,18 @@ function Person(name, email){
 }
 
 Pizza.prototype.calculatePrice = function(size) {
-  debugger;
+  var basePrice = 8;
   if(this.size === "Small") {
-    return "$10.00";
+    basePrice += this.toppings.length;
+    return basePrice;
   }
   if(this.size === "Medium") {
-    return "$12.00";
+    basePrice += (this.toppings.length + 2);
+    return basePrice;
   }
   if(this.size === "Large") {
-    return "$14.00";
+    basePrice += (this.toppings.length + 4);
+    return basePrice;
   }
 };
 
@@ -71,7 +74,7 @@ $(function() {
       pizza.toppings.forEach(function(topping) {
         $("#toppings-display").append("<li>" + topping + "</li>");
       });
-      debugger;
+
       var cost = pizza.calculatePrice(pizza.size);
       $("#cost-display").text(cost);
     });
