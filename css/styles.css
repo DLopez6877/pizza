@@ -1,0 +1,15 @@
+.initially-hidden {
+  display: none;
+}
+
+/*header*/
+#header-logo {
+  max-width: 100%;
+  margin-bottom: -10%;
+}
+
+.jumbotron {
+  margin: 0 0 -1.75%;
+  text-align: center;
+  padding: 0;
+}
