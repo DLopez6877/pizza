@@ -11,7 +11,18 @@ function Person(name, email){
   this.email = email;
 }
 
-
+Pizza.prototype.calculatePrice = function(size) {
+  debugger;
+  if(this.size === "Small") {
+    return "$10.00";
+  }
+  if(this.size === "Medium") {
+    return "$12.00";
+  }
+  if(this.size === "Large") {
+    return "$14.00";
+  }
+};
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -60,12 +71,16 @@ $(function() {
       pizza.toppings.forEach(function(topping) {
         $("#toppings-display").append("<li>" + topping + "</li>");
       });
+      debugger;
+      var cost = pizza.calculatePrice(pizza.size);
+      $("#cost-display").text(cost);
     });
 
 
 
     $("form#pizza-form").submit(function(event) {
       event.preventDefault();
+      alert("Your pizza is on its way!");
     });
 
   });
