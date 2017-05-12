@@ -16,11 +16,11 @@
       <div class="row">
         <div class="col-xs-6">
           <form id="pizza-form">
-            <div id="order-screen">
+            <div id="order-screen" class="well well-sm">
               <h1>Order a pizza</h1>
             <button type="button" id="order-button" class="next-button">Order</button>
             </div>
-            <div id="information-screen" class="initially-hidden">
+            <div id="information-screen" class="initially-hidden well well-sm">
               <h1>Enter your information:</h1>
               <div class="form-group">
                 <label for="name-entry">Name:</label>
@@ -36,7 +36,7 @@
               </div>
               <button type="button" id="information-button" class="next-button">Next</button>
             </div> <!--/order screen -->
-            <div id="size-screen" class="initially-hidden">
+            <div id="size-screen" class="initially-hidden well well-sm">
               <h2>Which size pizza would you like?</h2>
               <div class="radio">
                 <label>
@@ -58,7 +58,7 @@
               </div>
               <button type="button" id="size-button" class="next-button">Next</button>
             </div> <!-- /size screen -->
-            <div id="toppings-screen" class="initially-hidden">
+            <div id="toppings-screen" class="initially-hidden well well-sm">
               <h2>Which toppings would you like?</h2>
               <h4><span class="pricing">(Toppings are $1.00 each)</span></h4>
               <div class="checkbox">
@@ -81,7 +81,7 @@
               </div>
               <button type="button" id="toppings-button" class="next-button">Next</button>
             </div><!--end of toppings -->
-            <div id="confirmation-screen" class="initially-hidden">
+            <div id="confirmation-screen" class="initially-hidden well well-sm">
               <h1><span class="name-display"></span>'s Order:</h1>
               <p><span id="size-display"></span> pizza</p>
               <h3>Toppings:</h3>
@@ -97,7 +97,7 @@
           </form>
         </div><!-- /col -->
         <div class="col-xs-6">
-          <div id="about-screen">
+          <div id="about-screen" class="well well-sm">
             <h3>About Gotham Pizza</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
@@ -106,7 +106,7 @@
           </div>
         </div>
       </div><!-- /row -->
-      <div id="purchase-screen" class="initially-hidden">
+      <div id="purchase-screen" class="initially-hidden well well-sm">
           <h1 id="purchase-header"><span class="name-display"></span>, your pizza is ordered!</h1>
           <h2>Estimated time: 60 mins</h2>
           <h3>Receipt emailed to: <span id="email-display"></span></h3>
