@@ -13,8 +13,30 @@ function Pizza(size, toppings) {
 //////////////////            User Interface Logic            //////////////////
 ////////////////////////////////////////////////////////////////////////////////
 $(function() {
+  // order button
+  $("#order-button").click(function() {
+    $("#order-screen").hide();
+    $("#information-screen").show();
+    $("#about-screen").hide();
+    $("#pizza-screen").show();
+  });
+
+  // information button
+  $("#information-button").click(function() {
+    $("#information-screen").hide();
+    $("#size-screen").show();
+  });
+
+  // size button
+  $("#size-button").click(function() {
+    $("#size-screen").hide();
+    $("#toppings-screen").show();
+  });
+
+
   $("form#pizza-form").submit(function(event) {
     event.preventDefault();
+
 
     var name = $("input#name-entry").val();
     var email = $("input#email-entry").val();
@@ -30,6 +52,5 @@ $(function() {
     console.log(size);
     console.log(toppings);
   });
-
 
 });

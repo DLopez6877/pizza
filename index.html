@@ -32,6 +32,7 @@
               <button type="button" id="information-button" class="next-button">Next</button>
             </div> <!--/order screen -->
             <div id="size-screen" class="initially-hidden">
+              <h1>Which size pizza would you like?</h1>
               <select class="form-control" id="size">
                 <option>Small</option>
                 <option>Medium</option>
@@ -58,14 +59,18 @@
                   Sausage
                 </label>
               </div>
-              <button type="submit" class="btn btn-default">Order Pizza</button>
+              <button type="submit" class="next-button">Order Pizza</button>
             </div><!--end of toppings -->
           </form>
         </div><!-- /col -->
         <div class="col-xs-6">
-          <h3>About Gotham Pizza</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <img id="pizza-pic" class="initially-hidden" src="img/pizza.png" alt="cheese pizza">
+          <div id="about-screen">
+            <h3>About Gotham Pizza</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="initially-hidden" id="pizza-screen">
+            <img id="pizza-pic" src="img/pizza.png" alt="cheese pizza">
+          </div>
         </div>
 
       </div><!-- /row -->
