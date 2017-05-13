@@ -36,9 +36,7 @@ $(function() {
   // order button
   $("#order-button").click(function() {
     $("#order-screen").hide();
-    $("#information-screen").show();
-    $("#about-screen").hide();
-    $("#pizza-screen").show();
+    $("#information-screen").toggle("slide", 1100);
 
     var pizza = new Pizza();
     var person = new Person();
@@ -46,7 +44,9 @@ $(function() {
     // information button
     $("#information-button").click(function() {
       $("#information-screen").hide();
-      $("#size-screen").show();
+      $("#size-screen").toggle("slide", 1100);
+      $("#about-screen").toggle("pulsate", 600);
+      $("#pizza-screen").toggle("pulsate", 1200);
       var name = $("input#name-entry").val();
       var email = $("input#email-entry").val();
       var address = $("input#address-entry").val();
@@ -61,7 +61,7 @@ $(function() {
     // size button
     $("#size-button").click(function() {
       $("#size-screen").hide();
-      $("#toppings-screen").show();
+      $("#toppings-screen").toggle("slide", 1100);
       var size = $("input:radio:checked").val();
       pizza.size = size;
       $("#size-display").text(pizza.size);
@@ -70,7 +70,7 @@ $(function() {
     // toppings button
     $("#toppings-button").click(function() {
       $("#toppings-screen").hide();
-      $("#confirmation-screen").show();
+      $("#confirmation-screen").toggle("slide", 1100);
       var toppings = [];
       $("input:checkbox:checked").each(function(i){
         toppings[i] = $(this).val();
@@ -85,7 +85,7 @@ $(function() {
 
       // $("#pep-box").change(function(){
       //     if($(this).is(":checked")){
-      //         $("#pep-pic").show();
+      //         $("#pep-pic").toggle("slide", 1100);
       //     } else {
       //         $("#pep-pic").hide();
       //     }
@@ -95,8 +95,10 @@ $(function() {
 
     $("form#pizza-form").submit(function(event) {
       event.preventDefault();
+      $("#submit-button").hide();
       $(".row").hide();
-      $("#purchase-screen").show();
+      $("#purchase-screen").toggle("pulsate", 2000);
+      $(".row").delay(1000).toggle("pulsate", 1000);
     });
 
     $("input#small-radio").click(function () {

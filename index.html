@@ -4,6 +4,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/scripts.js"></script>
     <title>Gotham City Pizza</title>
   </head>
@@ -13,6 +14,11 @@
       <h1 id="header-title">Gotham City Pizza</h1>
     </header>
     <div class="container">
+      <div id="purchase-screen" class="initially-hidden well well-sm">
+          <h1 id="purchase-header"><span class="name-display"></span>, your pizza is ordered!</h1>
+          <h2>Estimated time: 60 mins</h2>
+          <h3>Receipt emailed to: <span id="email-display"></span></h3>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <form id="pizza-form">
@@ -140,7 +146,7 @@
               <p>$<span id="cost-display"></span>.00</p>
               <h3>Delivering to:</h3>
               <p><span id="address-display"></span></p>
-              <button type="submit" class="next-button">Confirm</button>
+              <button id="submit-button" type="submit" class="next-button">Confirm</button>
             </div>
           </form>
         </div><!-- /col -->
@@ -159,12 +165,6 @@
           </div>
         </div>
       </div><!-- /row -->
-      <div id="purchase-screen" class="initially-hidden well well-sm">
-          <h1 id="purchase-header"><span class="name-display"></span>, your pizza is ordered!</h1>
-          <h2>Estimated time: 60 mins</h2>
-          <h3>Receipt emailed to: <span id="email-display"></span></h3>
-      </div>
-
     </div>
   </body>
 </html>
