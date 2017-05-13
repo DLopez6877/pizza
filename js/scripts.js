@@ -45,8 +45,8 @@ $(function() {
     $("#information-button").click(function() {
       $("#information-screen").hide();
       $("#size-screen").toggle("slide", 1100);
-      $("#about-screen").toggle("pulsate", 600);
-      $("#pizza-screen").toggle("pulsate", 1200);
+      $("#about-screen").toggle("slide", 1100);
+      $("#pizza-screen").toggle("slide", 1100);
       var name = $("input#name-entry").val();
       var email = $("input#email-entry").val();
       var address = $("input#address-entry").val();
@@ -95,10 +95,8 @@ $(function() {
 
     $("form#pizza-form").submit(function(event) {
       event.preventDefault();
-      $("#submit-button").hide();
       $(".row").hide();
-      $("#purchase-screen").toggle("pulsate", 2000);
-      $(".row").delay(1000).toggle("pulsate", 1000);
+      $("#purchase-screen").toggle("slide", 1100);
     });
 
     $("input#small-radio").click(function () {
