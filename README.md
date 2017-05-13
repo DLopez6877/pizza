@@ -17,7 +17,7 @@ _Week 4 individual project. a pizza company where a user can choose one or more 
 * _open .index.html_
 
 ## gh-pages link
-[click here](https://dlopez6877.github.io/pizza)
+[click here](http://rawgit.com/dlopez6877/pizza/master/index.html)
 
 ## Specs
 | Behavior: this program | Inputs Example: when it receives | Output: it should return|
