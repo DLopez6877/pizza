@@ -118,8 +118,14 @@ body {
   text-align: center;
 }
 
+/*text*/
 h1 {
   font-family: Vonique;
+  text-align: center;
+}
+
+p {
+  font-size: 1.15em;
 }
 
 /*buttons*/
