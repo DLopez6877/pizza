@@ -60,26 +60,74 @@
             </div> <!-- /size screen -->
             <div id="toppings-screen" class="initially-hidden well well-sm">
               <h2>Which toppings would you like?</h2>
-              <h4><span class="pricing">(Toppings are $1.00 each)</span></h4>
-              <div class="checkbox">
-                <label>
-                  <input id="pep-box" type="checkbox" value="Pepperoni">
-                  Pepperoni
-                </label>
+              <h4><span class="pricing">(Toppings are &cent .50 each)</span></h4>
+              <div class="row">
+                <div class="checkbox col-md-6 col-xs-12" id="first-topping">
+                  <label>
+                    <input id="pep-box" type="checkbox" value="Pepperoni">
+                    Pepperoni
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="bacon-box" type="checkbox" value="Bacon">
+                    Bacon
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="sausage-box" type="checkbox" value="Sausage">
+                    Sausage
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="canadian-box" type="checkbox" value="Canadian Bacon">
+                    Canadian Bacon
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="chicken-box" type="checkbox" value="Chicken">
+                    Chicken
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="onion-box" type="checkbox" value="Onions">
+                    Onions
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="olive-box" type="checkbox" value="Olives">
+                    Olives
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="tomatoes-box" type="checkbox" value="Tomatoes">
+                    Tomatoes
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="peppers-box" type="checkbox" value="Peppers">
+                    Peppers
+                  </label>
+                </div>
+                <div class="checkbox col-md-6 col-xs-12">
+                  <label>
+                    <input id="pineapple-box" type="checkbox" value="Pineapple">
+                    Pineapple
+                  </label>
+                </div>
               </div>
-              <div class="checkbox">
-                <label>
-                  <input id="bacon-box" type="checkbox" value="Bacon">
-                  Bacon
-                </label>
+              <div class="row">
+                <div class="col-xs-12">
+                  <button type="button" id="toppings-button" class="next-button">Next</button>
+                </div>
               </div>
-              <div class="checkbox">
-                <label>
-                  <input id="sausage-box" type="checkbox" value="Sausage">
-                  Sausage
-                </label>
-              </div>
-              <button type="button" id="toppings-button" class="next-button">Next</button>
             </div><!--end of toppings -->
             <div id="confirmation-screen" class="initially-hidden well well-sm">
               <h1><span class="name-display"></span>'s Order:</h1>

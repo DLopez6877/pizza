@@ -15,15 +15,15 @@ function Person(name, email, address){
 Pizza.prototype.calculatePrice = function(size) {
   var basePrice = 8;
   if(this.size === "Small") {
-    basePrice += this.toppings.length;
+    basePrice += (this.toppings.length * .5 );
     return basePrice;
   }
   if(this.size === "Medium") {
-    basePrice += (this.toppings.length + 2);
+    basePrice += ((this.toppings.length * .5) + 2);
     return basePrice;
   }
   if(this.size === "Large") {
-    basePrice += (this.toppings.length + 4);
+    basePrice += ((this.toppings.length * .5) + 4);
     return basePrice;
   }
 };
