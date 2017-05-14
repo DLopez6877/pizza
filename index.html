@@ -66,7 +66,7 @@
             </div> <!-- /size screen -->
             <div id="toppings-screen" class="initially-hidden well well-sm">
               <h2>Which toppings would you like?</h2>
-              <h4><span class="pricing">(Toppings are &cent .50 each)</span></h4>
+              <h4><span class="pricing">(Toppings are $1.00 each)</span></h4>
               <div class="row">
                 <div class="checkbox col-md-6 col-xs-12" id="first-topping">
                   <label>
@@ -137,7 +137,7 @@
             </div><!--end of toppings -->
             <div id="confirmation-screen" class="initially-hidden well well-sm">
               <h1><span class="name-display"></span>'s Order:</h1>
-              <p><span id="size-display"></span> pizza</p>
+              <h4><span id="size-display"></span> pizza</h4>
               <h3>Toppings:</h3>
               <ul id="toppings-display">
 
@@ -162,6 +162,10 @@
             <img id="pep-pic" class="topping-pic initially-hidden" src="img/pep.png" alt="pepperoni">
             <img id="bacon-pic" class="topping-pic initially-hidden" src="img/bacon.png" alt="bacon">
             <img id="sausage-pic" class="topping-pic initially-hidden" src="img/sausage.png" alt="sausage">
+          </div>
+          <div id="order-screen2" class="well well-sm initially-hidden">
+            <h1>Another Pizza?</h1>
+          <button type="button" id="order2-button" class="next-button">Order</button>
           </div>
         </div>
       </div><!-- /row -->

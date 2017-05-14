@@ -15,15 +15,15 @@ function Person(name, email, address){
 Pizza.prototype.calculatePrice = function(size) {
   var basePrice = 8;
   if(this.size === "Small") {
-    basePrice += (this.toppings.length * .5 );
+    basePrice += this.toppings.length;
     return basePrice;
   }
   if(this.size === "Medium") {
-    basePrice += ((this.toppings.length * .5) + 2);
+    basePrice += (this.toppings.length + 2);
     return basePrice;
   }
   if(this.size === "Large") {
-    basePrice += ((this.toppings.length * .5) + 4);
+    basePrice += (this.toppings.length + 4);
     return basePrice;
   }
 };
@@ -98,6 +98,7 @@ $(function() {
       $("#submit-button").hide("slide", { direction: "left" }, 1100);
       $("#pizza-screen").hide("slide", { direction: "right" }, 1100);
       $("#purchase-screen").delay(1200).show("slide", { direction: "up" }, 1100);
+      $("#order-screen2").delay(2400).show("slide", { direction: "right" }, 1100);
     });
 
     $("input#small-radio").click(function () {
@@ -115,5 +116,14 @@ $(function() {
         $('#pizza-pic').addClass("pizza-pic-large");
     });
 
+  });
+
+  $("#order2-button").click(function() {
+    $("#purchase-screen").hide("slide", { direction: "up" }, 1100);
+    $("#order-screen2").hide("slide", { direction: "right" }, 1100);
+    $("#confirmation-screen").hide("slide", { direction: "left" }, 1100);
+    $("#size-screen").delay(1200).show("slide", { direction: "left" }, 1100);;
+    $("#pizza-screen").delay(1200).show("slide", { direction: "right" }, 1100);
+    $("#submit-button").show();
   });
 });

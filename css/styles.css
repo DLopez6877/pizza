@@ -31,7 +31,7 @@ body {
 }
 
 .well {
-   background-color: rgba(240, 240, 245, 0.8);
+   background-color: rgba(235, 235, 245, 0.8);
    border-width: medium;
    border-color: rgba(4, 82, 146, 0.5);
 }
@@ -61,7 +61,7 @@ body {
   color: grey;
   font-style: italic;
 }
-#order-screen {
+#order-screen, #order-screen2 {
   text-align: center;
 }
 
@@ -138,4 +138,10 @@ p {
   cursor: url('../img/cursor.gif'), crosshair;
   font-family: Showtime;
   font-size: 23px;
+}
+
+@media (max-width: 991px) {
+  p, label {
+    font-size: 1.3em;
+  }
 }
