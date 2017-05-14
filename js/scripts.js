@@ -35,18 +35,18 @@ Pizza.prototype.calculatePrice = function(size) {
 $(function() {
   // order button
   $("#order-button").click(function() {
-    $("#order-screen").hide();
-    $("#information-screen").toggle("slide", 1100);
+    $("#order-screen").hide("slide", { direction: "up" }, 1100);
+    $("#information-screen").delay(1200).show("slide", { direction: "up" }, 1100);
 
     var pizza = new Pizza();
     var person = new Person();
 
     // information button
     $("#information-button").click(function() {
-      $("#information-screen").hide();
-      $("#size-screen").toggle("slide", 1100);
-      $("#about-screen").toggle("slide", 1100);
-      $("#pizza-screen").toggle("slide", 1100);
+      $("#information-screen").hide("slide", { direction: "left" }, 1100);
+      $("#about-screen").hide("slide", { direction: "right" }, 1100);
+      $("#size-screen").delay(1200).show("slide", { direction: "left" }, 1100);;
+      $("#pizza-screen").delay(1200).show("slide", { direction: "right" }, 1100);
       var name = $("input#name-entry").val();
       var email = $("input#email-entry").val();
       var address = $("input#address-entry").val();
@@ -60,8 +60,8 @@ $(function() {
 
     // size button
     $("#size-button").click(function() {
-      $("#size-screen").hide();
-      $("#toppings-screen").toggle("slide", 1100);
+      $("#size-screen").hide("slide", { direction: "up" }, 1100);
+      $("#toppings-screen").delay(1200).show("slide", { direction: "up" }, 1100);
       var size = $("input:radio:checked").val();
       pizza.size = size;
       $("#size-display").text(pizza.size);
@@ -69,8 +69,8 @@ $(function() {
 
     // toppings button
     $("#toppings-button").click(function() {
-      $("#toppings-screen").hide();
-      $("#confirmation-screen").toggle("slide", 1100);
+      $("#toppings-screen").hide("slide", { direction: "up" }, 1100);
+      $("#confirmation-screen").delay(1200).show("slide", { direction: "up" }, 1100);
       var toppings = [];
       $("input:checkbox:checked").each(function(i){
         toppings[i] = $(this).val();
@@ -95,8 +95,9 @@ $(function() {
 
     $("form#pizza-form").submit(function(event) {
       event.preventDefault();
-      $(".row").hide();
-      $("#purchase-screen").toggle("slide", 1100);
+      $("#submit-button").hide("slide", { direction: "left" }, 1100);
+      $("#pizza-screen").hide("slide", { direction: "right" }, 1100);
+      $("#purchase-screen").delay(1200).show("slide", { direction: "up" }, 1100);
     });
 
     $("input#small-radio").click(function () {
