@@ -1,6 +1,6 @@
 # _Gotham City Pizza_
 
-#### _Pizza Co., 5/10/2017_
+#### _Pizza Company, 5/10/2017_
 
 #### By _**Daniel Lopez**_
 
@@ -13,11 +13,11 @@ _Week 4 individual project. a pizza company where a user can choose one or more 
 * _Click on gh-pages link to open site_
 * _OR_
 * _clone repository_
-* _open "pig-dice folder_
-* _open .index.html_
+* _open "pizza" folder_
+* _open index.html_
 
 ## gh-pages link
-[click here](http://rawgit.com/dlopez6877/pizza/master/index.html)
+[Gotham City Pizza - click here](http://rawgit.com/dlopez6877/pizza/master/index.html)
 
 ## Specs
 | Behavior: this program | Inputs Example: when it receives | Output: it should return|
