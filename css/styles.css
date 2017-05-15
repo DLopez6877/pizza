@@ -130,7 +130,7 @@ h1 {
   text-align: center;
 }
 
-p {
+p, li, label {
   font-size: 1.15em;
 }
 
