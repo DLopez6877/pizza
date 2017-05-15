@@ -125,5 +125,6 @@ $(function() {
     $("#size-screen").delay(1200).show("slide", { direction: "left" }, 1100);;
     $("#pizza-screen").delay(1200).show("slide", { direction: "right" }, 1100);
     $("#submit-button").show();
+    $("ul#toppings-display").empty();
   });
 });
