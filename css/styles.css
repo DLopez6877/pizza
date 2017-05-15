@@ -28,6 +28,7 @@ body {
   background-attachment: fixed;
   font-family: times;
   cursor: url('../img/cursor.gif'), default;
+  overflow-x: hidden;
 }
 
 .well {
