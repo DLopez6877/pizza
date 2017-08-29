@@ -38,7 +38,8 @@ _Week 4 individual project. a pizza company where a user can choose one or more 
 |clear fields and offer to order another pizza|name|e.g. Bruce Wayne|
 
 ## Known Bugs
-
+* transitions are not smooth on tablet and smaller devices
+* logo is out of position on hd desktops
 
 ## Support and contact details
 
